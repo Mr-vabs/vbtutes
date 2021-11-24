@@ -1,0 +1,32 @@
+{% extends 'base_site.htm' %}
+{% block title %}
+Contact
+{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0 mb-4">
+  <img src="https://source.unsplash.com/1600x900/?contact,firm,organization,webtech" class="img-fluid" alt="random smartphones keyword related picture results">
+</div>
+<div class="container">
+  <h1 class="text-center">Contact Us</h1>
+  <form action="/contact" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+      <input type="number" class="form-control" id="number" placeholder="Enter your number" name="number" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+      <textarea class="form-control" id="description" rows="3" name="description" placeholder="Enter additional information"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+{% endblock body %}
