@@ -1,3 +1,5 @@
 ## VBtutes
-Demo tutorial website
-Link : https://vebhv2vbtutes.pythonanywhere.com/
+
+### Demo tutorial website
+
+Deployment : [deployed](https://vebhv2vbtutes.pythonanywhere.com/)
